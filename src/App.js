@@ -4,6 +4,7 @@ import Products from './pages/Products';
 import RootLayout from "./pages/Root";
 import ContactPage from "./pages/Contact";
 import ErrorPage from "./pages/Error";
+import ProductDetail from "./pages/ProductDetail";
 
 const router = createBrowserRouter([
   { path: '/',
@@ -11,9 +12,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
 
-      { path: '/', element: <HomePage /> },
-      { path: '/products', element: <Products /> },
-      { path: '/contact', element: <ContactPage/>}
+      { index: true, element: <HomePage /> }, // path: ''
+      { path: 'products', element: <Products />},
+      { path: 'contact', element: <ContactPage/>},
+      { path: 'products/:productId', element: <ProductDetail />},
+      
     ]
   },
 ]);
@@ -38,6 +41,7 @@ export default App;
       { path: '/', element: <HomePage /> }, =====> CHILDREN ELEMENTS,
       { path: '/products', element: <Products /> },  
       { path: '/contact', element: <ContactPage/>}
+      { path: '/products/:productId', element: <ProductDetail />}  /products/:productId => DYNAMIC ID
     ]
   },
 ]);

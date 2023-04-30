@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-import MainNavigation from "../components/MainNavigation";
 
 function HomePage() {
 
@@ -8,7 +7,7 @@ function HomePage() {
         <>
             <p>Home page</p> 
             <p>
-                Navigate to <Link to="/products">products page</Link>
+                Navigate to <Link to="products">products page</Link>
             </p>
         </>
     )

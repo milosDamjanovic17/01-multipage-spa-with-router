@@ -7,9 +7,9 @@ function MainNavigation(){
         <header className={styles.header}>
             <nav>
                 <ul className={styles.list}>
-                    <li><NavLink to='/' className={({isActive}) => isActive ? styles.active : undefined} end>Home</NavLink></li>
-                    <li><NavLink to='/products' className={({isActive}) => isActive ? styles.active : undefined}>Products</NavLink></li>
-                    <li><NavLink to='/contact' className={({isActive}) => isActive ? styles.active : undefined}>Contact us!</NavLink></li>
+                    <li><NavLink to='' className={({isActive}) => isActive ? styles.active : undefined} end>Home</NavLink></li>
+                    <li><NavLink to='products' className={({isActive}) => isActive ? styles.active : undefined}>Products</NavLink></li>
+                    <li><NavLink to='contact' className={({isActive}) => isActive ? styles.active : undefined}>Contact us!</NavLink></li>
                 </ul>
             </nav>
         </header>
